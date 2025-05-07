@@ -72,3 +72,6 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: linux/amd64,linux/arm64
+      - uses: stacklok/frizbee-action@v0.0.3
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
